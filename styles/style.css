@@ -1,5 +1,125 @@
+/* Доп классы */
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--dark-color);
 }
+
+.header {
+  background-image: var(--dark-url-header);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: var(--accent-color);
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: var(--border-parameters);
+  border-block-start: var(--border-parameters);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: var(--border-parameters);
+  border-block-end: var(--border-parameters);
+}
+
+.header__rec {
+  text-transform: uppercase;
+  line-height: 1.25; 
+  position: absolute;
+  top: 10px;
+  right: 38px; 
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__rec::after {
+  content: "";
+  block-size: 9px;
+  inline-size: 9px;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0px 0px 4px 2px var(--accent-color);
+}
+
+.header__theme-menu-button {
+  padding: var(--pad-in-button);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  line-height: 1.19;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: var(--border-parameters);
+}
+
+.header__theme-menu-button:hover {
+  border: var(--border-parameters);
+}
+
+.header__theme-menu-button_active {
+  border: var(--border-parameters);
+}
+
+.header__title {
+  font-size: var(--title-size);
+  text-shadow: var(--text-shadow);  
+  color: var(--secondary-color);
+  line-height: 0.825;
+} 
+
+.header__subtitle {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
+
