@@ -8,14 +8,14 @@
   --pad-in-button: 2px 13px;
   --main-font-size: 1.125rem;
   --text-shadow: 4px 4px 0 var(--accent-color);
-  --dark-url-header: url("../images/cover-image-dark.png");
   --font-family: 'IBM Plex mono', sans-serif;
   --border-parameters: solid 1px var(--accent-color);
-  
+  --header-subtitle-size: clamp(22.1875rem, 21.6508rem + 2.2901vw, 22.75rem);
 }
 
 @media (width >= 768px) {
   :root {
-    --main-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-subtitle-size: clamp(22.75rem, -1.0625rem + 49.6094vw, 30.6875rem);
   }
 }

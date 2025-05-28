@@ -14,6 +14,7 @@
   --secondary-color: #DB00FF;
   --main-text-color: #F1B2CE;
   --dark-color: #000028;
+  --dark-url-header: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .page {
