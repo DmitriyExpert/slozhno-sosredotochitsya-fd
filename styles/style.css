@@ -116,7 +116,7 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-.header__subtitle {  
+.header__subtitle {
   align-self: center;
   width: 100%;
   max-width: var(--header-subtitle-size);
